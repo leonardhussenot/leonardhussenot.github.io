@@ -1,390 +1,138 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Léonard Hussenot</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Léonard Hussenot's Homepage</title>
 <style>
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  color: #444;
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-size: 12px;
-  line-height: 1.4;
-  padding: 1em;
-  margin: auto;
-  max-width: 60em;
-  background: #fefefe;
-}
-
-a {
-  color: #0645ad;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #0b0080;
-}
-
-a:hover {
-  color: #06e;
-}
-
-a:active {
-  color: #faa700;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-*::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-*::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-
-a::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-
-p {
-  margin: 1em 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #111;
-  /* line-height: 125%; */
-  /* margin-top: 2em; */
-  font-weight: normal;
-}
-
-h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.2em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.9em;
-}
-
-blockquote {
-  color: #666666;
-  margin: 0;
-  padding-left: 3em;
-  border-left: 0.5em #EEE solid;
-}
-
-hr {
-  display: block;
-  height: 2px;
-  border: 0;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #eee;
-  margin: 1em 0;
-  padding: 0;
-}
-
-pre, code, kbd, samp {
-  color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 0.98em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 2em;
-}
-
-li p:last-child {
-  margin-bottom: 0;
-}
-
-ul ul, ol ol {
-  margin: .3em 0;
-}
-
-dl {
-  margin-bottom: 1em;
-}
-
-dt {
-  font-weight: bold;
-  margin-bottom: .8em;
-}
-
-dd {
-  margin: 0 0 .8em 2em;
-}
-
-dd:last-child {
-  margin-bottom: 0;
-}
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-figure {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-figure img {
-  border: none;
-  margin: 0 auto;
-}
-
-figcaption {
-  font-size: 0.8em;
-  font-style: italic;
-  margin: 0 0 .8em;
-}
-
-table {
-  margin-bottom: 2em;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-table th {
-  padding: .2em 1em;
-  background-color: #eee;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-}
-
-table td {
-  padding: .2em 1em;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  vertical-align: top;
-}
-
-.author {
-  font-size: 1.2em;
-  text-align: center;
-}
-
-@media only screen and (min-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-size: 12pt;
-    max-width: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fdfdfd;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
   }
 
-  a, a:visited {
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111;
+  }
+
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 4px;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.75;
+  }
+
+  .bio a {
+    color: #1a1a1a;
     text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #bbb;
+    transition: text-decoration-color 0.2s;
   }
 
-  hr {
-    height: 1px;
-    border: 0;
-    border-bottom: 1px solid black;
+  .bio a:hover {
+    text-decoration-color: #111;
   }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 32px 0;
   }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
+  .links a {
+    color: #555;
+    font-size: 22px;
+    transition: color 0.2s;
   }
 
-  pre, blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
+  .links a:hover {
+    color: #111;
   }
 
-  tr, img {
-    page-break-inside: avoid;
+  .contact {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 32px;
   }
 
-  img {
-    max-width: 100% !important;
+  @media (max-width: 520px) {
+    .container { padding: 48px 20px; }
+    .header { flex-direction: column; text-align: center; gap: 20px; }
+    .header img { width: 100px; height: 100px; }
+    .links { justify-content: center; }
+    .contact { text-align: center; }
   }
-
-  @page :left {
-    margin: 15mm 20mm 15mm 10mm;
-}
-
-  @page :right {
-    margin: 15mm 10mm 15mm 20mm;
-}
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #cbc8c0;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.date {
-  color: gray
-}
 </style>
-
-
 </head>
 <body>
-<div class="topnav">
-  <a>Léonard Hussenot's Homepage</a>
+<div class="container">
+
+  <div class="header">
+    <img src="images/website_photo.png" alt="Léonard Hussenot">
+    <div>
+      <h1>Léonard Hussenot</h1>
+      <div class="subtitle">Staff Research Scientist, Google DeepMind</div>
+    </div>
+  </div>
+
+  <p class="bio">
+    I am a Staff Research Scientist at Google DeepMind, where I lead the Gemma post-training team focused on developing the most useful compact models for on-device applications. Since joining Google Brain, I have contributed to the evolution of Bard, Gemini, and Gemma, specializing in scaling reinforcement learning and distillation algorithms and architectures. During my PhD in a joint program between Google Brain and Inria Lille, my research centered on apprenticeship learning—a paradigm that integrates rewards and demonstrations to bridge the gap between human and artificial intelligence.
+  </p>
+
+  <hr class="divider">
+
+  <div class="links">
+    <a href="https://scholar.google.fr/citations?user=nTdWO9MAAAAJ&hl=en" target="_blank" title="Google Scholar">
+      <object data="images/scholar_logo.svg" width="22px" height="22px" style="pointer-events:none;"></object>
+    </a>
+    <a href="https://fr.linkedin.com/in/l%C3%A9onard-hussenot-371685104" target="_blank" title="LinkedIn">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </div>
+
+  <p class="contact">leonard (dot) hussenot (at) gmail (dot) com</p>
+
 </div>
-
-<div style="width: 70%; float: left;">
-<p> I am a senior research scientist in the Google DeepMind team in Paris. Before that, I was very lucky to be a CIFRE PhD student between Google Brain and INRIA Lille.</p>
-
-<p align="justify"> I am interested in leveraging human feedback for sequential decision making. This led me to explore ideas related to apprenticeship learning, imitation learning, and RL from human feedback. I co-lead work on algorithms and infrastructure for RL(HF) in LLMs and I was involved in the conception several products like Google's <a href=https://bard.google.com/> Bard</a>.</p> 
-
-<p>contact: leonard (dot) hussenot (at) gmail (dot) com </p>
-  
-<p>
-    <a href="https://scholar.google.fr/citations?user=nTdWO9MAAAAJ&hl=en" target="_blank" class="svg" style="margin-right:10px">
-    <object data="images/scholar_logo.svg"  width="24px" height="24px" style="color:#211F1F;font-size:24px;pointer-events:none;"> " " </object>
-    </a>
-    <a href="https://twitter.com/leonardhussenot?lang=en" target="_blank" style="margin-right:10px">
-    <i class="fa fa-twitter fa-10x" style="color:#00ACEE;font-size:24px"> </i>
-    </a>
-    <a href="https://github.com/leonardhussenot/" target="_blank" style="margin-right:10px">
-    <i class="fa fa-github fa-10x" style="color:#211F1F;font-size:24px"> </i>
-    </a>
-    <a href="https://fr.linkedin.com/in/l%C3%A9onard-hussenot-371685104" target="_blank" style="margin-right:10px">
-    <i class="fa fa-linkedin fa-10x" style="color:#0e76a8;font-size:24px"> </i>
-    </a>
-</p>
-<p>Huge thanks to my friend <a href="https://ddsh.github.io/"> Robert Dadashi </a> for the website.</p>
-</div>
-<div style="width: 22%; float: right;">
-<p><img src="images/website_photo.png" alt="me"></p>
-</div>
-
 </body>
 </html>
